@@ -31,12 +31,12 @@ namespace SaveToXml
         {
             try
             {                
-                information info = new information();
-                info.FirstName = tbxfirstName.Text;
-                info.LastName = tbxlastName.Text;
-                info.Age = Convert.ToInt32(tbxAge.Text);
-                info.City = tbxCity.Text;
-                SaveXml.savedata(info, "micke1111.xml");
+                Person person = new Person();
+                person.FirstName = tbxfirstName.Text;
+                person.LastName = tbxlastName.Text;
+                person.Age = Convert.ToInt32(tbxAge.Text);
+                person.City = tbxCity.Text;
+                SaveXml.savedata(person, "person.xml");
                 msglabel.Visibility = Visibility.Visible;
             }
             catch (Exception ex)
