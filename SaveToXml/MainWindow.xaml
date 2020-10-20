@@ -1,0 +1,23 @@
+﻿<Window x:Name="Write_To_Xml" x:Class="SaveToXml.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SaveToXml"
+        mc:Ignorable="d"
+        Title="Save To .xml" Height="450" Width="452" Background="#FF888B8B">
+    <Grid Margin="20" Background="#FFCCCFCF">
+        <Label Content="Firstname" HorizontalAlignment="Left" Margin="86,50,0,0" VerticalAlignment="Top"/>
+        <Label Content="Lastname" HorizontalAlignment="Left" Margin="86,120,0,0" VerticalAlignment="Top"/>
+        <Label Content="Age" HorizontalAlignment="Left" Margin="86,190,0,0" VerticalAlignment="Top"/>
+        <Label Content="City" HorizontalAlignment="Left" Margin="86,260,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="msglabel" Content="Data saved sucessfully..." HorizontalAlignment="Left" Margin="86,340,0,0" VerticalAlignment="Top" Foreground="#FF5CE011" Visibility="Hidden"/>
+        <TextBox x:Name="tbxfirstName" HorizontalAlignment="Left" Margin="177,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbxlastName" HorizontalAlignment="Left" Margin="177,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbxAge" HorizontalAlignment="Left" Margin="177,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbxCity" HorizontalAlignment="Left" Margin="177,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnsave" Content="Save" HorizontalAlignment="Left" Margin="102,320,0,0" VerticalAlignment="Top" Width="91" Click="btnsave_Click"/>
+        <Button x:Name="btnreset" Content="Reset" HorizontalAlignment="Left" Margin="263,320,0,0" VerticalAlignment="Top" Width="91" Click="btnreset_Click"/>
+
+    </Grid>
+</Window>
